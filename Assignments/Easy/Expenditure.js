@@ -9,12 +9,12 @@ function calculateTotalSpentByCategory(transactions) {
 
   //converting it into an array of objects
   const categories = Object.keys(resultObject);
-  return (result = categories.map((category) => {
+  return result = categories.map((category) => {
     return {
       category: category,
       totalSpent: resultObject[category], //category = 'food' works similar to resultObject["food"]
     };
-  }));
+  });
 }
 const transactions = [
   {
