@@ -1,5 +1,5 @@
 const startTime = Date.now();
-const delay = 2000;
+const delay = 5000;
 setTimeout(function test() {
   const endTime = Date.now();
   const timeTaken = endTime - startTime;
