@@ -4,7 +4,6 @@ const countVowels = (string) => {
   let countVowels = 0;
   for (let i = 0; i < processedString.length; i++) {
     if (checkForVowels.has(processedString[i])) countVowels++;
-    //brute force
     // for (let j = 0; j < checkForVowels.length; j++) {
     //   if (processedString[i] == checkForVowels[j]) countVowels++;
     // }

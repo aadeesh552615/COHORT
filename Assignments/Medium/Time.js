@@ -8,4 +8,4 @@ const calculateSum = (number) => {
     return end - start;
 }
 
-console.log(calculateSum(1000000000));
+console.log(`${calculateSum(1000000000)} milliseconds`);
