@@ -13,20 +13,32 @@ const user1 = {
   name: "aadeesh",
   gender: "male",
 };
-// console.log(user1.name);
+// console.log(Object.keys(user1));
+console.log(user1["name"]);
 
 //array of objects
+const t = [1, 2, 3, 4, 5, 6];
 const allUsers = [
   { name: "aadeesh", gender: "male" },
   { name: "vasu", gender: "male", metadata: { age: 21, city: "jammu" } },
   { name: "aps", gender: "female" },
 ];
-const length = allUsers.length;
-for (let i = 0; i < length; i++) {
-  if (allUsers[i].metadata) {
-    // console.log(allUsers[i].metadata.age);
-  }
-}
+
+const allUsersData = allUsers.map((key) => {
+  return key;
+});
+console.log(allUsersData);
+
+const tData = t.filter((key) => {
+  return key % 2 === 0;
+});
+console.log(tData);
+
+const sumReduce = (total, num) => {
+  return total + num;
+};
+const tDataAccum = t.reduce(sumReduce, 4);
+console.log(tDataAccum);
 
 //functions
 function sum(a, b) {
@@ -48,4 +60,4 @@ function calculator(a, b, arithmaticOperation) {
   console.log(arithmaticOperation(a, b));
 }
 
-calculator(4, 9, sub);
+// calculator(4, 9, sub);
